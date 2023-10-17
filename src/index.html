@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Configuración del encabezado del documento -->
+    <meta charset="UTF-8"> <!-- Configura el conjunto de caracteres a UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configura la escala inicial para dispositivos móviles -->
+    <title>Registro de Mesas</title> <!-- Título de la página -->
+    <link rel="stylesheet" href="styles.css"> <!-- Enlace al archivo de estilos externo -->
+
+</head>
+<body>
+    <div class="container">
+        <!-- Contenedor principal del contenido de la página -->
+        <h1>Registro de Mesas</h1> <!-- Título principal de la página -->
+
+        <!-- Formulario para registrar una nueva mesa -->
+        <div class="form-group">
+            <label for="numeroMesa">Número de Mesa:</label>
+            <input type="text" id="numeroMesa" placeholder="Ingrese el número de mesa">
+        </div>
+
+        <div class="form-group">
+            <label for="disponibilidad">Disponibilidad (número):</label>
+            <input type="number" id="disponibilidad" placeholder="Ingrese la disponibilidad">
+        </div>
+
+        <button onclick="registrarMesa()">Registrar Mesa</button> <!-- Botón para registrar la mesa -->
+
+        <h2>Mesas Guardadas</h2> <!-- Título para la sección de mesas guardadas -->
+        <div id="mesasGuardadas"></div> <!-- Contenedor para mostrar las mesas guardadas -->
+
+        <!-- Modal para ingresar comandas -->
+        <div id="formularioComanda" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="cerrarModalComanda()">&times;</span> <!-- Botón para cerrar el modal -->
+                <h3>Comanda</h3> <!-- Título del modal -->
+                <form id="comandaForm">
+                    <div class="form-group">
+                        <label for="orden">Orden:</label>
+                        <textarea id="orden" placeholder="Ingrese la orden del cliente" required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-success">Guardar Comanda</button> <!-- Botón para guardar la comanda -->
+                </form>
+            </div>
+        </div>
+
+        <h2>Comandas Guardadas</h2> <!-- Título para la sección de comandas guardadas -->
+        <ul id="comandasGuardadas"></ul> <!-- Lista para mostrar las comandas guardadas -->
+    </div>
+
+    <script src="script.js"></script> <!-- Enlace al archivo de script JavaScript -->
+</body>
+</html>
