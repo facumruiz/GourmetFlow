@@ -44,6 +44,3 @@ El script JavaScript maneja la lógica de la aplicación. Algunas de las funcion
 
 La idea principal de este proyecto es evolucionar hacia un servicio completo para la gestión de mesas en restaurantes y lugares de comida. Se busca proporcionar a los negocios del sector una solución eficiente y fácil de usar para la administración de mesas, pedidos y comandas.
 
-
-
-**¡Esperamos que este proyecto evolucione y se convierta en una herramienta valiosa para la industria restaurantera!**
